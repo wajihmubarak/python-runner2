@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نظام تسجيل</title>
+
+<style>
+body{
+    background:#0a0a0b;
+    color:white;
+    text-align:center;
+    font-family:sans-serif;
+}
+
+input{
+    padding:10px;
+    margin:5px;
+    width:200px;
+    border-radius:8px;
+    border:none;
+}
+
+button{
+    padding:10px 20px;
+    background:gold;
+    border:none;
+    cursor:pointer;
+    margin:5px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>👤 تسجيل / دخول</h2>
+
+<h3>تسجيل</h3>
+<form action="/register" method="POST">
+<input name="username" placeholder="اسم المستخدم">
+<br>
+<input name="password" type="password" placeholder="كلمة المرور">
+<br>
+<button>تسجيل</button>
+</form>
+
+<hr>
+
+<h3>دخول</h3>
+<form action="/login" method="POST">
+<input name="username" placeholder="اسم المستخدم">
+<br>
+<input name="password" type="password" placeholder="كلمة المرور">
+<br>
+<button>دخول</button>
+</form>
+
+</body>
+</html>
